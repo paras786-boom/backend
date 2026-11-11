@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP Project - Metallic Chic</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Metallic Chic Theme */
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0fe2ea, #00617b, #0b30aa);
+      color: #f2f2f2;
+      overflow-x: hidden;
+    }
+
+    /* Top Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #3062e1, #3baaff9f, #0817bc);
+      border-bottom: 2px solid #a9a9a9;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 50px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar h2 {
+      color: #cfcfcf;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+
+    .navlist {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    .navlist a {
+      text-decoration: none;
+      color: #e6e6e6;
+      font-weight: 500;
+      font-size: 25px;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .navlist a:hover {
+      background: linear-gradient(90deg, #d4af37, #c0c0c0);
+      color: #2c27d6;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Main Content */
+    .main-content {
+      padding-top: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Modern Roof-Style Frame */
+    .frame {
+      position: relative;
+      padding: 80px 90px;
+      background: linear-gradient(145deg, #e4eeefb7, #fafeff);
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(5, 126, 255, 0.1);
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Roof Effect */
+    .frame::before {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 160px;
+      height: 25px;
+      background: linear-gradient(90deg, #0f14a0, #f5f5f5, #c9c9cc);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .frame:hover {
+      transform: scale(1.03);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-size: 65px;
+      font-weight: 600;
+      color: #0a0606;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 5px rgba(43, 40, 217, 0.2);
+    }
+
+    h2 {
+      color: #070a08; /* Metallic gold accent */
+      font-size: 50px;
+      margin: 15px 0;
+      font-weight: 500;
+    }
+
+    p {
+      color: #070505;
+      font-size: 25px;
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 20px;
+      color: #000000;
+      background: linear-gradient(90deg, #0c1ae2, #f9f9f9);
+      border-top: 1px solid #a9a9a9;
+      box-shadow: 0 -3px 10px rgba(239, 8, 8, 0.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2><b>Backend Project</b></h2>
+    <ul class="navlist">
+      <li><a href="#">Home</a></li>
+      <li><a href="prog.html">Programs</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="main-content">
+    <div class="frame">
+      <h1>PHP PROGRAMS</h1>
+      <h2><b>Paras</b></h2>
+      <p>4267/25</p>
+      <p>BCA- 2nd Year</p>
+      <h2>Teacher: Gaurav Kumar</h2>
+    </div>
+  </section>
+
+  <footer>
+     <b>© 2026 PHP Project | Created by Paras</b>
+  </footer>
+
+</body>
+</html>
